@@ -34,6 +34,7 @@ The local directory is then deleted (to save disk space).
 ## 🔧 Setup
 
 Clone the repo:
+```bash
 npm install
 npx playwright install chromium
 export AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=...;AccountName=youracct;AccountKey=xxxx;EndpointSuffix=core.windows.net"
