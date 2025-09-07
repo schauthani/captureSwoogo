@@ -39,10 +39,10 @@ npm install
 npx playwright install chromium
 export AZURE_STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=...;AccountName=youracct;AccountKey=xxxx;EndpointSuffix=core.windows.net"
 export AZURE_BLOB_CONTAINER="swoogo-evidence"
-Step 1: Save your Swoogo session (first time only)
+#Step 1: Save your Swoogo session (first time only)
 node swoogo_capture.js --save-session --auth auth.json
-Step 2:
+#Step 2:
 Update the registration.csv to contain the list of registrations you want to capture.
-Step 3: Run the capture
-node swoogo_capture.js --in swoogoReg.csv --auth auth.json --out out --pdf --eventId 255274
+#Step 3: Run the capture
+node capture.js --in registration.csv --auth auth.json --out out --eventId 255274
 
